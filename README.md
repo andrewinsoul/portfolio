@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The link to the deployed site is: [Here](https://andrew-portfoli0.herokuapp.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:

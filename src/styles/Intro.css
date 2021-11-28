@@ -1,0 +1,43 @@
+.overlay-intro {
+  /* background: rgba(182, 17, 17, 0.342); */
+  background: rgb(117, 62, 62);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.intro {
+  background: rgb(43, 42, 42);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-intro {
+  background: rgb(226, 37, 37);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(100%);
+}
+.intro-text {
+  color: lavender;
+  font-family: 'Heebo';
+  font-size: 2rem;
+}
+.hide-intro {
+  background: black;
+  overflow: hidden;
+}
+.hide-intro span {
+  transform: translateY(100%);
+  display: inline-block;
+}

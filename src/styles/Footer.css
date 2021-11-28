@@ -1,0 +1,122 @@
+.footer-container {
+  width: 85%;
+  margin: 0 auto;
+  border-top: 2px solid rgba(196, 196, 196, 0.58);
+}
+.footer-content {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.footer-box1 {
+  /* background: lavender; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-bgtxt {
+  font-size: 27px;
+  line-height: 45px;
+  width: 97%;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+.footer-text {
+  /* font-size: 20px; */
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.footer-box2 {
+  /* background: pink; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.footer-box3 {
+  /* background: pink; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.footer-emoji {
+  width: 40%;
+}
+.footer-links {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 2em;
+}
+.footer-links p {
+  text-decoration: underline;
+  text-align: right;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+.footer-links p:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in;
+  text-decoration: none;
+}
+.footer-mailBtn {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .footer-container {
+    width: 97%;
+  }
+  .footer-bgtxt {
+    font-size: 24px;
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+  }
+  .footer-bgtxt {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-text,
+  .footer-links {
+    display: none;
+  }
+  .footer-emoji {
+    width: 100%;
+    /* background: lavender; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-box2 {
+    flex-direction: column;
+    /* background: lavender; */
+    align-items: center;
+    margin: 3em 0;
+  }
+  .footer-mailBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 57px;
+    background: #9357fc;
+    border-radius: 22px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s ease-in;
+    font-size: 15px;
+    margin-top: 1em;
+  }
+  .footer-mailBtn p {
+    margin-left: 1em;
+  }
+}

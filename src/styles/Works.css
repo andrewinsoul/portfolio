@@ -1,0 +1,139 @@
+.works {
+  margin: 3em 0 1em 0;
+}
+.works-content {
+  width: 75%;
+  margin: 6em auto 0 auto;
+  /* background: rgb(43, 43, 46); */
+}
+.section-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sm-Titles,
+.sm-Titles2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 81px;
+  color: #ffffff;
+}
+.works-container {
+  margin-top: 3em;
+}
+.works-rows {
+  margin: 1em 0 5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background: cornsilk; */
+  /* background: rgb(37, 33, 33); */
+}
+.workimg {
+  /* width: 35vw; */
+  width: 100%;
+  /* height: 330px; */
+  border-radius: 35px;
+  cursor: pointer;
+  margin-bottom: 1em;
+  /* background: rgb(228, 134, 134); */
+}
+.workimg-m {
+  display: none;
+}
+.works-bottom,
+.works-bottom p {
+  transition: 0.4s ease-in;
+}
+.works-single:hover > .works-bottom,
+.works-single2:hover > .works-bottom {
+  border-bottom: 1px solid #fff;
+  transition: 0.4s ease-in;
+}
+.works-single:hover > .works-bottom p,
+.works-single2:hover > .works-bottom p {
+  color: #fff;
+  /* font-weight: 400; */
+  transition: 0.4s ease-in;
+}
+.works-single {
+  transition: 0.4s ease-in;
+}
+/* change for larger screens */
+.works-single2 {
+  margin-left: 3em;
+  transition: 0.4s ease-in;
+}
+.works-bottom {
+  position: absolute;
+  /* background: rgb(43, 43, 42); */
+  /* width: 464px; */
+  /* bigger screen */
+  width: 29vw;
+  /* small screen */
+  /* width: 35vw; */
+  border-bottom: 1px solid #c4c4c4;
+  padding: 0.5em 0 0.5em 1.2em;
+  bottom: -32px;
+}
+.works-bottom p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.mg-le {
+  padding-left: -90px;
+}
+@media (max-width: 1350px) {
+  .works-bottom {
+    width: 35vw;
+  }
+}
+@media (max-width: 1080px) {
+  .works-content {
+    width: 97%;
+  }
+}
+@media (max-width: 860px) {
+  .works {
+    margin: 8em 0 1em 0;
+  }
+  .works-rows {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4em 0 0 0;
+  }
+  .works-single2 {
+    margin-left: 0;
+    margin-top: 3em;
+  }
+
+  .works-bottom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .sm-Titles {
+    font-size: 34px;
+  }
+  .emojiImg0 {
+    width: 22%;
+  }
+  .works-box img {
+    border-radius: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .workimg {
+    display: none;
+  }
+  .workimg-m {
+    display: block;
+  }
+}

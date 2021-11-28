@@ -1,0 +1,309 @@
+.menu-wrap {
+  position: fixed;
+  top: 1em;
+  left: 85%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  z-index: 2;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 2em;
+  z-index: 1;
+  /* width: 60px; */
+  width: 65px;
+  height: 65px;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  /* background-color: #2b3252; */
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Top and bottom lines*/
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  /* z-index: 6; */
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/*Moves line down */
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+/*Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(225deg);
+  /* transform: rotate(135deg); */
+}
+
+/* Toggler spin on hover */
+/* .menu-wrap .toggler:hover + .hamburger > div {
+    transform: rotate(180deg);
+  } */
+
+/*Turn lines into X */
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* .menuClose {
+    position: absolute;
+    width: 5%;
+    z-index: 1;
+    right: 55px;
+    top: 18px;
+    transition: 0.2s ease-in;
+  }
+  .menuClose:hover {
+    transform: rotate(180deg);
+    transition: 0.2s ease-in;
+  } */
+
+/* .menu-wrap .toggler + .hamburger > div:before {
+    left: 0;
+    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+      top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
+  }
+  .menu-wrap .toggler + .hamburger > div:after {
+    top: 10px;
+    right: 0;
+    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+      top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
+  } */
+/*   */
+
+/* .menu-wrap .toggler:checked + .hamburger > div:before {
+    left: -80px;
+    top: -80px;
+    transform: translate3d(80px, 80px, 0) rotate(90deg);
+    transition: left 0.125s ease-out, top 0.05s 0.125s linear,
+      transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    right: -80px;
+    top: -80px;
+    transform: translate3d(-80px, 80px, 0) rotate(90deg);
+    transition: right 0.125s ease-out, top 0.05s 0.125s linear,
+      transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  } */
+
+/*Rotate on hover(when checkbox is checked) */
+/* .menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+} */
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+  /* background: lavender; */
+}
+
+/* */
+/* .menu-hide {
+  display: none !important;
+}
+.menu-hide2 {
+  transform: scale(0) !important;
+  transition-duration: 0.6s !important;
+}
+.lines-reverse {
+  transform: rotate(-135deg) !important;
+} */
+/* .menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+} */
+/*Turn lines into X */
+
+/* */
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.6s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: 80%; */
+  height: 100%;
+  visibility: hidden;
+  /* visibility: visible; */
+  overflow: hidden;
+}
+
+/* Overlay */
+.menu-wrap .menu > div {
+  background-repeat: no-repeat;
+  background: rgb(10, 10, 10);
+  background: url('../assets/png/ov5.png');
+  width: 100%;
+  height: 100vh;
+  /* border-radius: 5%; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  /* flex: none; */
+  align-items: center;
+
+  /* -webkit-background-size: cover;
+  background-size: cover; */
+  /* background-position: center; */
+
+  /* Pop up */
+  /* transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.2s; */
+  /* Pop up */
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+.mobileContact {
+  background: #9357fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 74px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  font-weight: 500;
+  font-size: 22px;
+}
+.mobileContact img {
+  width: 36px;
+  height: 34px;
+  margin-right: 1em;
+}
+.mobileImage {
+  bottom: 80px;
+  position: absolute;
+}
+
+.mbox-two {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  width: 100%;
+  /* max-width: 200vw; */
+  max-height: 100vh;
+  height: 80vh;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  padding-left: 3em;
+  /* background: rgb(43, 43, 46); */
+  margin-top: 3em;
+  /* background: #16202b; */
+}
+
+/*list style */
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  /* color: #2b3252; */
+  font-size: 2.2rem;
+  padding: 0.5em 0 0.9em 0;
+}
+
+/*list style */
+.menu-wrap .menu > div > div > ul > li > a,
+.menu-wrap .menu > div > div > ul > li > p {
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.6s ease;
+  /* color: #fff; */
+  font-size: 0.7em;
+  transition: 0.1s ease-in-out;
+  text-decoration: underline;
+  font-weight: 300;
+}
+/* .menu-wrap .menu > div > div > ul > li > a:hover,
+.menu-wrap .menu > div > div > ul > li > p:hover {
+  color: #d0f5d1;
+  transition: 0.1s ease-in-out;
+} */
+
+@media (max-width: 375px) {
+  .menu-wrap {
+    left: 80%;
+  }
+  .menu-wrap .hamburger {
+    width: 67px;
+    height: 55px;
+  }
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    height: 2px;
+  }
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    height: 2px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .menu-wrap {
+    left: 82%;
+  }
+  .menu-wrap .menu {
+    top: 0;
+    left: 20%;
+  }
+  .menu-wrap .hamburger {
+    width: 64px;
+    height: 45px;
+    padding: 1rem;
+    margin-right: 4em;
+  }
+  .menu-wrap .hamburger > div {
+    height: 2px;
+  }
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    height: 2px;
+    background: inherit;
+  }
+} */

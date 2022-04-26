@@ -1,11 +1,9 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-
-import '../styles/Footer.css'
-
-import Logo from '../assets/svg/footerlogo.svg'
-import Emojji from '../assets/svg/footer-emoji.svg'
-import Mail from '../assets/svg/cmail.svg'
+import React from "react";
+import { motion } from "framer-motion";
+import "../styles/Footer.css";
+import Logo from "../assets/svg/footerlogo.svg";
+import Emojji from "../assets/svg/footer-emoji.svg";
+import Mail from "../assets/svg/cmail.svg";
 
 const Footer = () => {
   return (
@@ -14,10 +12,16 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-content">
             <div className="footer-box1">
-              <p className="footer-bgtxt">Let’s convert those brillant ideas into solutions that will benefit the human race!</p>
+              <p className="footer-bgtxt">
+                Let’s convert those brillant ideas into solutions that will
+                benefit the human race!
+              </p>
               <a href="mailto:andrewinsoul@gmail.com">
                 <p className="footer-text hvr-underline-from-left2">
                   Email: andrewinsoul@gmail.com
+                </p>
+                <p className="footer-text hvr-underline-from-left2">
+                  Phone: +2348166035057
                 </p>
               </a>
             </div>
@@ -45,7 +49,7 @@ const Footer = () => {
                       rotate: [0, 10, -5, 10, -5, 10, -5, 10, -5, 0],
                       transition: {
                         repeat: Infinity,
-                        type: 'spring',
+                        type: "spring",
                         delay: 0.2,
                         duration: 4,
                       },
@@ -68,7 +72,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p>github</p>{' '}
+                  <p>github</p>{" "}
                 </a>
               </div>
             </div>
@@ -76,7 +80,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

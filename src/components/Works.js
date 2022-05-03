@@ -114,7 +114,7 @@ const Works = () => {
               </div>
               <div className="works-single2">
                 <a
-                  href="https://6265b5f024f612773d98a312--nimble-jelly-d1c323.netlify.app/"
+                  href="https://nimble-jelly-d1c323.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -183,6 +183,32 @@ const Works = () => {
                 </a>
                 <div className="works-bottom">
                   <p>REACT-NATIVE, REDUX</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="works-rows">
+              <div className="works-single">
+                <a
+                  href="https://626d233e2737b50008662c03--unrivaled-kringle-71d315.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="works-box">
+                    <img
+                      className="workimg hvr-shrink"
+                      src="https://i.imgur.com/5JfHKHU.png"
+                      alt="Andy Coin"
+                    />
+                    <img
+                      className="workimg-m"
+                      src="https://i.imgur.com/5JfHKHU.png"
+                      alt="Andy Coin"
+                    />
+                  </div>
+                </a>
+                <div className="works-bottom">
+                  <p>REACTJS, SOLIDITY, ETHER, HARDHAT.</p>
                 </div>
               </div>
             </div>

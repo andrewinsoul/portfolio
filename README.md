@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The link to the deployed site is: [Here](https://andrew-portfoli0.herokuapp.com/)
+The link to the deployed site is: [Here](https://6270743466b75100082ce472--andrew-portfolio-998.netlify.app/)
 
 ## Available Scripts
 

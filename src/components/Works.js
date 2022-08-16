@@ -14,6 +14,7 @@ import Aktuarialm from "../assets/svg/works/aktuarial-m.svg";
 import PodroomM from "../assets/svg/works/podroom-m.svg";
 import Quika from "../assets/svg/works/quika.svg";
 import Quikam from "../assets/svg/works/quika-m.svg";
+import Aegle from "../assets/svg/aegle.svg";
 import SharedWallet from "../assets/bank.png";
 
 const Works = () => {
@@ -209,6 +210,21 @@ const Works = () => {
                 </a>
                 <div className="works-bottom">
                   <p>REACTJS, SOLIDITY, ETHER, HARDHAT.</p>
+                </div>
+              </div>
+              <div className="works-single2">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.aegle.patient&hl=en&gl=US"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="works-box">
+                    <img className="workimg hvr-shrink" src={Aegle} alt="rnm" />
+                    <img className="workimg-m" src={Aegle} alt="rnm" />
+                  </div>
+                </a>
+                <div className="works-bottom">
+                  <p>REACT-NATIVE, REDUX, REACT</p>
                 </div>
               </div>
             </div>
